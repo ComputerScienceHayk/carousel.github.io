@@ -1,0 +1,94 @@
+body {
+    color: white;
+    outline: none;
+}
+.slider-container {    
+    max-width: 1000px;
+    padding: 2rem 3rem;
+    margin: 2rem auto 0 auto;
+    overflow: hidden;
+    border-radius: 5px;    
+    position:relative;
+    &:before {
+        content: '.slider-container';
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+svg {
+    cursor: pointer;
+}
+
+img {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 100%;
+}
+img:focus {
+    outline: none;
+}
+
+.my-slider {
+    position: relative;    
+}
+
+.slider-item {
+    padding: 1.5rem .75rem;
+    position: relative;
+    &:before {
+        content: '.slider-item';
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.controls {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    left: 0;    
+    color: black;
+    width: 100%;    
+    top: 50%;
+    transform: translatey(-50%);
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+}
+.left-arrow {
+    width: 3em;
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.right-arrow {
+    width: 3em;
+    cursor: pointer;
+}
+.card {
+    text-align: center;    
+    margin: 0 auto;
+    max-width: 300px;       
+    color: #333;
+    background: white;
+    border-radius: 5px;
+    font-family: sans-serif;
+    overflow: hidden;
+    box-shadow: 2px 2px rgba(black, .3);
+    position: relative;
+    &:before {
+        content: '.card';
+        position: absolute;
+        bottom: 0;
+        color: blue;
+    }
+    img {
+        margin-bottom: .25rem;
+    }
+}
